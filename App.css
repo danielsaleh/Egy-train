@@ -1,0 +1,343 @@
+/*colors of the website:
+blue : #1D68B3
+light orange: #FBB040
+dark orange: #EA6E24
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+.html, .body{
+  font-weight: bold;
+  font-family: 'Droid Arabic Kufi', serif;
+  direction: ltr;
+  overflow: hidden;
+  width: 100%;
+}
+/*navbar styling*/
+.nav{
+  position: fixed;
+  top: 0;
+  left : 0;
+  width: 100%;
+  height: 60px;
+  background: #1D68B3;
+  z-index: 50;
+}
+.titlec{
+  display: inline-block;
+  width: 60%;
+  position: absolute;
+  margin: 61px 0 0 39.5%;
+  background: white;
+  border: 1px solid black;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+.titlel{
+  border: 1px solid black;
+  font-size: 1.4em;
+  text-align: center;
+  background: white;
+  margin: 0px auto 0px auto;
+  padding: 2px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.titlel:hover{
+  color: #FBB040;
+  background: black;
+  text-decoration: none;
+}
+.snav{
+width: 70%;
+}
+.titlec.hide{
+  height: 0;
+}
+.icon{
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  display: block;
+  color : white;
+}
+.icon2{
+
+}
+.icon3{
+  color :#1D68B3;
+}
+.navb{
+  position: absolute;
+  top: 0;
+  height: 60px;
+  width: 20%;
+  background: #FBB040;
+  border: none;
+  color: black;
+  font-weight: 600;
+  font-size: 2.2em;
+  line-height: 2;
+}
+.linkersm{
+width:20%;
+height: 60px;
+background: none;
+margin: 0 0 0 80%;
+top:0;
+position: fixed;
+text-align: center;
+border: none;
+}
+
+.space{
+  width : 100%;
+  height: 60px;
+}
+/*logo*/
+.logo{
+  width: 49%;
+  max-height: 150px;
+  position: absolute;
+  margin : 10px auto 50px 50%
+}
+.logo2{
+  width: 50%;
+  max-height: 150px;
+  position: absolute;
+  margin : -15% auto 50px 15%
+}
+.coninfo{
+  direction: rtl;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+  text-align: center;
+}
+.concont{
+  width: 100%;
+  margin: -15% 0% 0 0%;
+  color: #1D68B3;
+  text-align: center;
+}
+/*slideshow styling*/
+.d-block{
+width: 100%;
+height : auto;
+}
+/*takadam styling*/
+#takadam{
+  width: 90%;
+  margin: auto 5% auto 5%;
+}
+
+.taktitle{
+  color : #FBB040;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.takarea1,.takarea2{
+  direction: rtl;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  text-align: right;
+  font-size: 1.4em;
+  vertical-align: center;
+  overflow: auto;
+  resize: none;
+  border: 0.1px solid lightgrey;
+  padding: 5px;
+}
+.takarea1:focus,.takarea2:focus{
+  border: none;
+}
+.takarea1, .takarea2{
+  height: 50px;
+}
+.takbut{
+  background: #1D68B3;
+  width: 40%;
+  height: 50px;
+  color : white;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  border: #FBB040;
+}
+
+/*man na7n  styling*/
+.manT{
+  font-size: 1.5em;
+  color: #FBB040;
+  width: 80%;
+  margin: 0 10% 0 0;
+  text-shadow: 1px 1px 1px black;
+}
+.manM{
+  direction:rtl;
+  width: 100%;
+  margin: 0 0% 0 0%;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #1D68B3;
+  text-align: right;
+  }
+.manp{
+  width: 90%;
+  }
+.mapm{
+  width: 90%;
+  margin: 0 5% 0 0;
+  height: 200px;
+  border: 1px solid black;
+}
+.in{
+  max-width: 100%;
+  margin: auto auto auto auto;
+}
+
+/*ma3loomat tohemak styling*/
+.glyphicon-plus,.glyphicon-minus{
+  color: white;
+  margin: 0 5px 0 10px;
+  transition: 0.5s;
+}
+
+.inM{
+  direction: rtl;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.inT{
+  font-size: 1.5em;
+  width: 100%;
+  color: #1D68B3;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #FBB040;
+  text-align: center;
+  font-weight: bold;
+}
+
+.accordion {
+  background-color: #1D68B3;
+  color: #FBB040;
+  cursor: pointer;
+  padding: 18px;
+  padding-right: 0;
+  width: 100%;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 1.5em;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.active, .accordion:hover {
+  background-color: #FBB040;
+  color : #1D68B3;
+}
+
+.accordion:after {
+  content: '+';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "-";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: right;
+  color: #1D68B3;
+  font-weight: bold;
+}
+
+/*contacts styling*/
+#contact{
+  width: 90%;
+  margin: auto 5% auto 5%;
+}
+
+.contitle{
+  color : #FBB040;
+  text-shadow: 1px 1px 1px black;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+.conarea1,.conarea2,.conarea3{
+  direction: rtl;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  text-align: right;
+  font-size: 1.4em;
+  vertical-align: center;
+  overflow: auto;
+  resize: none;
+  border: 0.5px solid grey;
+  padding: 5px;
+}
+.conarea1:focus,.conarea2:focus,.conarea3:focus{
+  border: none;
+}
+.conarea1, .conarea2{
+  height: 50px;
+}
+.conarea3{
+  height: 200px;
+}
+.conbut{
+  background: #1D68B3;
+  width: 40%;
+  height: 50px;
+  color : white;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  border: #FBB040;
+}
+/*footer styling*/
+.footer{
+  background: black;
+  width: 100%;
+  direction: rtl;
+}
+.footerl{
+  width: 90%;
+  margin: 0 0 10px 5%;
+  text-align: center;
+  text-decoration: none;
+
+}
+.flink{
+  transition: 0.25s;
+  font-size: 2em;
+  width: 100%;
+  display: block;
+}
+.flink:hover{
+  color: white;
+  font-size: 1.5em;
+  text-decoration:none;
+}
+.map{
+  width:90%;
+  height: 300px;
+  margin: 0 0 0 5%;
+  border: 1px solid white;
+}

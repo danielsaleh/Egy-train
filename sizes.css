@@ -1,0 +1,179 @@
+*colors of the website:
+blue : #1D68B3
+light orange: #FBB040
+dark orange: #EA6E24
+*/
+
+/*things that weren't used in small screen*/
+.link{
+  display: none;
+}
+.navsocial{
+  display: none;
+}
+.space2{
+  display: none;
+}
+.navu{
+  display: none;
+}
+.impimg{
+  display: none;
+}
+@media only screen and (min-width : 600px) {
+.titlec{
+  width: 40%;
+  margin-left: 59.5%
+}
+.navsocial{
+  display: block;
+  position: absolute;
+  z-index: 151;
+  width: 35%;
+  margin : 15px 0% 0 40%;
+}
+.slink{
+  color: white;
+  margin : 0 15px 0 0;
+}
+.space2{
+  display: block;
+}
+.logo{
+  max-height: 250px;
+  margin: -5% 0 0 50%;
+}
+.logo2{
+  max-height: 250px;
+  margin: -22.5% 0 0 15%;
+}
+.coninfo{
+  font-size: 1.5em;
+}
+.mapm{
+  height: 300px;
+}
+.accordion{
+  text-align: center;
+}
+.taktitle{
+  font-size: 2.5em;
+}
+.contitle{
+
+  font-size: 2.5em;
+}
+.inT{
+  font-size: 2.5em;}
+}
+
+@media only screen and (min-width : 768px) {
+  body{
+    width: 100%;
+  }
+  #toggle{
+    display: none;
+  }
+  .linkersm{
+    display: none;
+  }
+  .link{
+    display: inline-block;
+    z-index: 151;
+    color : white;
+    font-size: 1.5em;
+    margin: 0 10px 0 0;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .link:hover{
+    color: #EA6E24;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .link:active{
+    text-decoration: none;
+  }
+  .navu{
+    position: absolute;
+    display: inline-block;
+    font-size: 1em;
+    direction: rtl;
+    margin: 20px 0 0 17.5%;
+    text-decoration: none;
+  }
+  .navu:hover, .navu:active{
+    color: #EA6E24;
+    text-decoration: none;
+  }
+  .navsocial{
+ margin: 20px 0 0 75%;
+  }
+  .navb{
+    width: 15%;
+    font-size: 1.7em;
+  }
+  .eltahek:after{
+    content: "التحق الان"
+  }
+  .manp, .manT{
+    margin-right: 10%;
+    width: 80%;
+  }
+  .logo{
+    width:30%;
+    margin: -5% 0 0 57.5%;
+  }
+  .logo2{
+    width: 50%;
+    margin: -200px 0 0 17.5%;
+  }
+}
+@media only screen and (min-width : 1024px) {
+  body{
+    font-size: 1.2em;
+  }
+  .logo{
+    width: 20%;
+    margin: -50px 0 0 55%;
+    max-height: 250px;
+  }
+  .logo2{
+    width: 30%;
+    margin : -190px 0 0 30%;
+  }
+  .navu{
+    margin-left: 30%;
+  }
+
+  .imptext{
+    display: inline-block;
+    width: 49%;
+    margin: -33vw 0 0 51%
+  }
+  .impimg{
+    display: inline-block;
+    width: 50%;
+    margin: 0px 0 0 0;
+  }
+  .space3{
+    height: 110px;
+    width: 100%;
+  }
+  .coninfo{
+    font-size: 2em;
+  }
+  .takbut, .conbut{
+    width: 20%;
+  }
+  .flink{
+    display: inline-block;
+    width: 15%;
+    margin: 0 0 0 0;
+  }
+
+  .newline{
+    display: none;
+  }
+}
