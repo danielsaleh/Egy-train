@@ -5,15 +5,15 @@ dark orange: #EA6E24
 */
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
-.html, .body{
+html, body{
   font-weight: bold;
   font-family: 'Droid Arabic Kufi', serif;
   direction: ltr;
-  overflow: hidden;
   width: 100%;
+  scroll-behavior: smooth;
 }
 /*navbar styling*/
-.nav{
+#navbar{
   position: fixed;
   top: 0;
   left : 0;
@@ -26,19 +26,18 @@ dark orange: #EA6E24
   display: inline-block;
   width: 60%;
   position: absolute;
-  margin: 61px 0 0 39.5%;
+  margin: 60px 0 0 40%;
   background: white;
-  border: 1px solid black;
-  -webkit-transition: height 2s;
-  transition: height 2s;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 .titlel{
-  border: 1px solid black;
   font-size: 1.4em;
   text-align: center;
-  background: white;
+  background:  #FBB040;
+  color: black;
   margin: 0px auto 0px auto;
-  padding: 2px;
+  border: 2px solid #FBB040;
   display: block;
   text-decoration: none;
   font-weight: bold;
@@ -69,7 +68,6 @@ width: 70%;
 }
 .navb{
   position: absolute;
-  top: 0;
   height: 60px;
   width: 20%;
   background: #FBB040;
@@ -96,16 +94,16 @@ border: none;
 }
 /*logo*/
 .logo{
-  width: 49%;
-  max-height: 150px;
-  position: absolute;
-  margin : 10px auto 50px 50%
+    display: inline-block;
+  height: 60px;
+  max-width: 20%;
+  margin: 65px 0 0 22.5%;
 }
 .logo2{
-  width: 50%;
-  max-height: 150px;
-  position: absolute;
-  margin : -15% auto 50px 15%
+    display: inline-block;
+  height: 60px;
+  max-width: 45%;
+  margin: 65px 0 0 0%;
 }
 .coninfo{
   direction: rtl;
@@ -122,9 +120,37 @@ border: none;
   text-align: center;
 }
 /*slideshow styling*/
-.d-block{
+.container{
 width: 100%;
-height : auto;
+height : 100%;
+padding: 0;
+margin: 0;
+}
+.left, .right{
+  height: 98%;
+}
+.slideb{
+ width: 20%;
+ height: 30px;
+ transform: translate(70%, -250%);
+background: #1D68B3;
+color: white;
+border: 1px solid royalblue;
+}
+.sli{
+  color: white;
+}
+.sli:hover, .sli:active{
+  text-decoration: none;
+}
+.carousel-indicators{
+  color: black;
+  margin: -30px 0 0 0;
+  z-index: 45;
+  width: 100%;
+  position: absolute;
+  transform: translate(0px,-100%);
+  height: 30px;
 }
 /*takadam styling*/
 #takadam{
@@ -133,8 +159,7 @@ height : auto;
 }
 
 .taktitle{
-  color : #FBB040;
-  text-shadow: 1px 1px 1px black;
+  color : #EA6E24;
   font-size: 2em;
   font-weight: bold;
   width: 100%;
@@ -170,13 +195,7 @@ height : auto;
 }
 
 /*man na7n  styling*/
-.manT{
-  font-size: 1.5em;
-  color: #FBB040;
-  width: 80%;
-  margin: 0 10% 0 0;
-  text-shadow: 1px 1px 1px black;
-}
+
 .manM{
   direction:rtl;
   width: 100%;
@@ -185,16 +204,17 @@ height : auto;
   font-weight: bold;
   color: #1D68B3;
   text-align: right;
+  padding: 2px;
+  }
+  .manT{
+    font-size: 1.5em;
+    color: #EA6E24;
+    width: 100%;
+    margin: 0 10% 0 0;
   }
 .manp{
-  width: 90%;
+  width: 100%;
   }
-.mapm{
-  width: 90%;
-  margin: 0 5% 0 0;
-  height: 200px;
-  border: 1px solid black;
-}
 .in{
   max-width: 100%;
   margin: auto auto auto auto;
@@ -218,9 +238,11 @@ height : auto;
   width: 100%;
   color: #1D68B3;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #FBB040;
   text-align: center;
   font-weight: bold;
+}
+div.panel:first-child{
+  display: block !important;
 }
 
 .accordion {
@@ -237,8 +259,12 @@ height : auto;
   transition: 0.4s;
   font-weight: bold;
 }
+.show {
+    display: block !important;
+}
 
-.active, .accordion:hover {
+
+ .accordion:hover {
   background-color: #FBB040;
   color : #1D68B3;
 }
@@ -251,16 +277,16 @@ height : auto;
   margin-left: 5px;
 }
 
-.active:after {
+.activ:after {
   content: "-";
 }
 
 .panel {
   padding: 0 18px;
   background-color: white;
-  max-height: 0;
+  display: none;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: display 0.6s ease-out;
   text-align: right;
   color: #1D68B3;
   font-weight: bold;
@@ -273,8 +299,7 @@ height : auto;
 }
 
 .contitle{
-  color : #FBB040;
-  text-shadow: 1px 1px 1px black;
+  color : #EA6E24;
   font-size: 2em;
   font-weight: bold;
   width: 100%;
@@ -311,6 +336,12 @@ height : auto;
   margin: 0 0 20px 0;
   border: #FBB040;
 }
+.mapm{
+  width: 100%;
+  margin: 0 5% 0 0;
+  height: 200px;
+  border: 1px solid black;
+}
 /*footer styling*/
 .footer{
   background: black;
@@ -318,7 +349,7 @@ height : auto;
   direction: rtl;
 }
 .footerl{
-  width: 90%;
+  width: 100%;
   margin: 0 0 10px 5%;
   text-align: center;
   text-decoration: none;
@@ -332,10 +363,21 @@ height : auto;
 }
 .flink:hover{
   color: white;
-  font-size: 1.5em;
   text-decoration:none;
 }
-.map{
+.social{
+  width: 100%;
+  text-align: center;
+}
+.sflink{
+  color: white;
+  font-size: 2em;
+  margin: 2%;
+}
+.sflink:hover{
+  color: #1D68B3;
+}
+.mapholder{
   width:90%;
   height: 300px;
   margin: 0 0 0 5%;

@@ -6,13 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+      <link rel = "icon" href="./logoFU.png"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link rel = "stylesheet" href = "./app.css" />
-      <link rel = "stylesheet" href = "./sizes.css" />
+      <link rel = "stylesheet" type = "text/css" href = "App.css" />
+      <link rel = "stylesheet" type = "text/css" href = "sizes.css" />
       <title>Egy Train</title>
   </head>
   <body>
@@ -30,15 +31,30 @@ function toggle(){
   return 0;
 }
 </script>
-<nav class= "nav">
+<!--logo-->
+<img class="logo" src= "./logoFU.png" alt="logo"  />
+<img class="logo2" src= "./logoFL.png" alt="logo"  />
+
+<nav class="secnav">
+  <p class="con">
+    <i class="glyphicon glyphicon-earphone"></i>
+    +201234567890
+  &ensp;
+    <i class="glyphicon glyphicon-envelope"></i>
+    info@companyname.com
+  </p>
+</nav>
+
+<nav id = "navbar">
+
 <a href="#takadam"><button class="navb" title = "التحق الان"><span class="eltahek"></span> <i class = "icon2 glyphicon glyphicon-edit"></i></button></a>
 
 <div id="toggle" class = "titlec hide" >
-<a href = "#" class = "titlel">الرئيسية</a>
-<a href = "#takadam" class="titlel">تقدم الأن</a>
-<a href = "#man" class = "titlel">من نحن</a>
-<a href = "#info" class = "titlel">معلومات تهمك</a>
-<a href = "#contact" class = "titlel">تواصل معنا</a>
+<a onclick="toggle()" href = "#" class = "titlel">الرئيسية</a>
+<a onclick="toggle()" href = "#takadam" class="titlel">تقدم الأن</a>
+<a onclick="toggle()" href = "#man" class = "titlel">من نحن</a>
+<a onclick="toggle()" href = "#info" class = "titlel">معلومات تهمك</a>
+<a onclick="toggle()" href = "#contact" class = "titlel">تواصل معنا</a>
 
 </div>
 <button onclick="toggle()" class = "linkersm"><i/><i class = "icon glyphicon glyphicon-list"></i></button>
@@ -47,7 +63,7 @@ function toggle(){
 
 <div class = "navu">
 <a href = "#" class = "link">الرئيسية</a>
-<a href = "#takadam" class = "link">تقدم الأن</a>
+<a href = "#takadam" class = "link">التحق الان</a>
 <a href = "#man" class = "link">من نحن</a>
 <a href = "#info" class = "link">معلومات تهمك</a>
 <a href = "#contact" class = "link">تواصل معنا</a>
@@ -61,16 +77,27 @@ function toggle(){
 <a href = "https://www.google.com" class = "slink" target="_blank"><i class="slink fab fa-instagram fa-2x"></i></a>
 <a href = "https://www.google.com" class = "slink" target="_blank"><i class="slink fab fa-youtube fa-2x"></i></a>
 </div>
-</nav>
 
-<div class = "space"></div>
+</nav>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= 20) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
 <div class = "space space2"></div>
-<!--logo-->
-<img class="logo" src= "./logo upper.png" alt="logo"  />
-<img class="logo2" src= "./logo lower.png" alt="logo"  />
-<div class = "space"></div>
-<div class = "space"></div>
-<div class = "space"></div>
+
+
+<div class = "space spaces"></div>
 <div class = "space space2"></div>
 <div class="space3"></div>
 <div class="concont">
@@ -89,33 +116,36 @@ function toggle(){
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="0" class="carind active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="carind"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="carind"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
         <img src="college.jpg" alt="college" style="width:100%;">
+        <button onclick="window.location.href= '#contact'"  class="slideb"><a class="sli" href = "#contact">تواصل معنا</a></button>
       </div>
 
       <div class="item">
         <img src="college.jpg" alt="college" style="width:100%;">
+          <button onclick="window.location.href= '#contact'" class="slideb"><a class="sli" href = "#contact">تواصل معنا</a></button>
       </div>
 
       <div class="item">
         <img src="college.jpg" alt="college" style="width:100%;">
+          <button onclick="window.location.href= '#contact'" class="slideb"><a class="sli" href = "#contact">تواصل معنا</a></button>
       </div>
     </div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="glyphicon glyphicon-chevron-left lef"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="glyphicon glyphicon-chevron-right rig"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
@@ -128,8 +158,8 @@ function toggle(){
 
 <p class = "taktitle">التحق الان</p>
 <textarea class = "takarea1" placeholder= "الاسم"/></textarea>
-<textarea class = "takarea2" placeholder= "البريد الالكتروني"/></textarea>
-<textarea class = "takarea1" placeholder= "رقم الهاتف"></textarea>
+<textarea class = "takarea1" placeholder= "البريد الالكتروني"/></textarea>
+<textarea class = "takarea2" placeholder= "رقم الهاتف"></textarea>
 <button class="takbut" type="submit"><i class= "glyphicon glyphicon-edit"></i> أشترك الان</button>
 </textarea/>
 </form>
@@ -146,7 +176,7 @@ function toggle(){
 <li>أنشأت الشركة منذ عام 2013 و لنا خبرة كبيرة في مجالات التدريب و الدراسة بالخارج</li>
 <li>يعمل بالشركة كفاءات علي مستوي عالي من الخبرة المهنية</li>
 </ul>
-<div><iframe class = "mapm" src="https://maps.google.com/maps?width=100%&amp;height=100&amp;hl=en&amp;coord=30.045915,31.2221011&amp;q=Cairo%20Tower &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
+
 </div>
 </div>
 <!--Important info -->
@@ -157,7 +187,7 @@ function toggle(){
 <div class="imptext">
 <div class="accorcont">
 <button class="accordion">الخدمات التي نقدمها</button>
-<div class= "panel">
+<div class= "panel show activ">
 <ul>
   <li>تقديم النصح و المساعدة في اختيار الجامعة و الاختصاص المناسبين</li>
   <li>استخراج القبول الجامعي و الدعوة الدراسية من وزارة التعليم العالي</li>
@@ -210,19 +240,27 @@ function toggle(){
 </div>
 <script>
 var acc = document.getElementsByClassName("accordion");
-var i;
+var panel = document.getElementsByClassName('panel');
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+    	var setClasses = !this.classList.contains('activ');
+        setClass(acc, 'activ', 'remove');
+        setClass(panel, 'show', 'remove');
+
+       	if (setClasses) {
+            this.classList.toggle("activ");
+            this.nextElementSibling.classList.toggle("show");
+        }
     }
-  });
 }
+
+function setClass(els, className, fnName) {
+    for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+    }
+}
+
 </script>
 <!--Contact us -->
 <div id="contact">
@@ -236,6 +274,7 @@ for (i = 0; i < acc.length; i++) {
 
 <button class="conbut" type="submit"><i class= "glyphicon glyphicon-edit"></i>أرسال</button>
 </form>
+<div><iframe class = "mapm" src="https://maps.google.com/maps?width=100%&amp;height=100&amp;hl=en&amp;coord=30.045915,31.2221011&amp;q=Cairo%20Tower &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
 </div>
 <!--Footer -->
 <div class = "footer">
@@ -248,7 +287,13 @@ for (i = 0; i < acc.length; i++) {
         <a href = "#contact" class = "flink">تواصل معنا</a>
       </div>
     </div>
-<div><iframe class = "map col-6-lg" src="https://maps.google.com/maps?width=100%&amp;height=100&amp;hl=en&amp;coord=30.045915,31.2221011&amp;q=Cairo%20Tower &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
+    <div class = "social">
+    <a href = "https://www.google.com" class = "sflink" target="_blank"><i class="sflink fab fa-facebook-f fa-2x"></i></a>
+    <a href = "https://www.google.com" class = "sflink" target="_blank"><i class="sflink fab fa-twitter fa-2x"></i></a>
+    <a href = "https://www.google.com" class = "sflink" target="_blank"><i class="sflink fab fa-instagram fa-2x"></i></a>
+    <a href = "https://www.google.com" class = "sflink" target="_blank"><i class="sflink fab fa-youtube fa-2x"></i></a>
+    </div>
+<div class="mapholder"><iframe class = "map" src="https://maps.google.com/maps?width=100%&amp;height=100&amp;hl=en&amp;coord=30.045915,31.2221011&amp;q=Cairo%20Tower &amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div><br />
 
 <a href="#" class="glyphicon glyphicon-"></a>
 </div>
